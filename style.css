@@ -1,0 +1,23 @@
+/*
+https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+
+#ef233c  crvena
+#414141  tamno siva
+*/
+@import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+ul {
+    list-style: none;
+}
