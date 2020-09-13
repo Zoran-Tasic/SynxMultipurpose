@@ -320,7 +320,7 @@ section four
 
 .galleryBg {
     background: var(--lightGray);
-    margin: 0 40px;
+    margin: 0 60px;
 }
 
 .gallery {
@@ -380,4 +380,89 @@ section four
     background-image: url(img/people3.jpg);
     background-position: center;
     background-size: cover;
+}
+
+
+/***************
+section five 
+***************/
+
+.five {
+    background: var(--red);
+    margin-top: 30px;
+}
+
+.five h5 {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--white);
+    padding-top: 30px;
+}
+
+.five h3 {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.five h4 {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects {
+    display: flex;
+    height: 80vh;
+}
+
+.projects .projectOne {
+    flex: 0 0 50%;
+    background-image: url(img/project1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .projectOthers {
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .projectOthers .project11 {
+    flex: 0 0 50%;
+    height: 50%;
+    background-image: url(img/project11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .projectOthers .project3 {
+    flex: 0 0 50%;
+    height: 50%;
+    background-image: url(img/project3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .projectOthers .project4 {
+    flex: 0 0 50%;
+    height: 50%;
+    background-image: url(img/project4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .projectOthers .project5 {
+    flex: 0 0 50%;
+    height: 50%;
+    background-image: url(img/project5.jpg);
+    background-size: cover;
+    background-position: center;
 }
