@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
- :root {
+:root {
     --red: #ef233c;
     --darkGray: #414141;
     --lightGray: #f7f7f7;
@@ -137,8 +137,8 @@ section one
 
 .one {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 0 0 50px;
-    /*flex-wrap: wrap;*/
     justify-content: space-between;
 }
 
@@ -228,6 +228,7 @@ section two
 
 .two div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 30px;
 }
@@ -424,6 +425,7 @@ section five
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     height: 80vh;
 }
 
@@ -479,6 +481,7 @@ sectio six
 
 .six {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -584,4 +587,104 @@ section seven
 
 .sevenItem article ul li i {
     color: var(--red);
+}
+
+footer {
+    background: var(--red);
+    color: var(--white);
+}
+
+footer h3 {
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+}
+
+
+/****************
+responsive
+****************/
+
+@media(max-width:768px) {
+    button {
+        font-size: 1rem;
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+    header {
+        height: 80vh;
+    }
+    header nav h1 a {
+        font-weight: 500;
+        padding: 5px 0 5px 5px;
+    }
+    nav ul li a {
+        margin: 3px;
+        font-size: .7rem;
+    }
+    header hgroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+    header hgroup h2 {
+        font-size: 2.5rem;
+    }
+    header hgroup p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    header hgroup {
+        height: 80vh;
+    }
+    header hgroup h2 {
+        font-size: 1.5rem;
+    }
+    header hgroup p {
+        font-size: .8rem;
+    }
+    .one article:first-child {
+        flex: 0 0 100%;
+    }
+    .one article:last-child {
+        flex: 0 0 100%;
+    }
+    .two div article {
+        flex: 0 0 100%;
+    }
+    .two div article h4 {
+        margin-top: 20px;
+    }
+    .galleryBg {
+        margin: 0 20px;
+    }
+    .gallery article {
+        flex: 0 0 100%;
+    }
+    .gallery .img_2 {
+        order: 1;
+    }
+    .gallery .art_2 {
+        order: 2;
+    }
+    .gallery .img_3 {
+        order: 3;
+    }
+    .gallery .art_3 {
+        order: 4;
+    }
+    .projects .projectOne {
+        flex: 0 0 100%;
+    }
+    .projects .projectOthers {
+        flex: 0 0 100%;
+    }
+    .projects .projectOthers .project11,
+    .projects .projectOthers .project3,
+    .projects .projectOthers .project4,
+    .projects .projectOthers .project5 {
+        flex: 0 0 50%;
+    }
 }
