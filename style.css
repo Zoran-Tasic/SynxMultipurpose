@@ -1,294 +1,383 @@
-                /*
-https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+@import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
+ :root {
+    --red: #ef233c;
+    --darkGray: #414141;
+    --lightGray: #f7f7f7;
+    --white: #fff;
+    --black: #000;
+    --transition: .4s ease
+}
 
-#ef233c  crvena
-#414141  tamno siva
-*/
-                
-                @import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
-                 :root {
-                    --red: #ef233c;
-                    --darkGray: #414141;
-                    --lightGray: #f7f7f7;
-                    --white: #fff;
-                    --transition: .4s ease
-                }
-                
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-                
-                body {
-                    font-size: 16px;
-                    font-family: 'Source Sans Pro', sans-serif;
-                    line-height: 1.7;
-                }
-                
-                h1,
-                h2,
-                h3,
-                h4,
-                h5,
-                h6 {
-                    font-family: 'Kaushan Script', cursive;
-                }
-                
-                ul {
-                    list-style: none;
-                }
-                
-                a {
-                    text-decoration: none;
-                }
-                
-                button {
-                    background: var(--red);
-                    color: var(--white);
-                    cursor: pointer;
-                    border: none;
-                    font-size: 1.5rem;
-                    padding: 10px 30px;
-                    margin-top: 20px;
-                }
-                
-                button:hover {
-                    background: var(--white);
-                    color: var(--red);
-                    transition: var(--transition);
-                }
-                /*************
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: var(--white);
+    color: var(--red);
+    transition: var(--transition);
+}
+
+
+/*************
 header
 *************/
-                
-                header {
-                    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(img/header.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    height: 100vh;
-                    padding: 5px 10px 0 10px;
-                    color: var(--white);
-                }
-                
-                nav {
-                    background: var(--white);
-                    margin: 20px 40px 0 40px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    line-height: 1.1;
-                }
-                
-                header nav h1 a {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    color: var(--darkGray);
-                    text-transform: uppercase;
-                    font-family: 'Gugi';
-                    font-weight: 700;
-                    padding: 5px 0 5px 45px;
-                }
-                
-                header nav h1 a span:first-child {
-                    font-size: 2.3rem;
-                }
-                
-                header nav h1 a span:last-child {
-                    font-size: .8rem;
-                }
-                
-                header nav h1 a span:first-child:first-letter {
-                    color: var(--red);
-                }
-                
-                nav ul {
-                    display: flex;
-                }
-                
-                nav ul li a {
-                    color: var(--darkGray);
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    font-size: .9rem;
-                    margin: 10px 20px;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                header hgroup {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    height: 90vh;
-                }
-                
-                header hgroup h2 {
-                    font-size: 2.5rem;
-                }
-                
-                header hgroup p {
-                    font-size: 1rem;
-                    text-align: center;
-                }
-                /****************
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 5px 10px 0 10px;
+    color: var(--white);
+}
+
+nav {
+    background: var(--white);
+    margin: 20px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.1;
+}
+
+header nav h1 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--darkGray);
+    text-transform: uppercase;
+    font-family: 'Gugi';
+    font-weight: 700;
+    padding: 5px 0 5px 45px;
+}
+
+header nav h1 a span:first-child {
+    font-size: 2.3rem;
+}
+
+header nav h1 a span:last-child {
+    font-size: .8rem;
+}
+
+header nav h1 a span:first-child:first-letter {
+    color: var(--red);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--darkGray);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+header hgroup h2 {
+    font-size: 2.5rem;
+}
+
+header hgroup p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/****************
 section one 
 ****************/
-                
-                .one {
-                    display: flex;
-                    padding: 0 0 0 50px;
-                    /*flex-wrap: wrap;*/
-                    justify-content: space-between;
-                }
-                
-                .one article:first-child {
-                    flex: 0 0 45%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                }
-                
-                .one article:last-child {
-                    flex: 0 0 45%;
-                }
-                
-                .one img {
-                    width: 100%;
-                }
-                
-                .one h5 {
-                    font-family: 'Source Sans Pro';
-                    text-transform: uppercase;
-                    font-size: .9rem;
-                    font-weight: 700;
-                    color: var(--red);
-                }
-                
-                .one article:first-child hr {
-                    height: 2px;
-                    background: var(--red);
-                    width: 20%;
-                    border: none;
-                    margin: 5px 0 20px 0;
-                }
-                
-                .one article h4 {
-                    font-size: 1.1rem;
-                    font-family: 'Kaushan Script', cursive;
-                    margin-bottom: 20px;
-                }
-                
-                .one article p {
-                    font-size: .8rem;
-                }
-                /*************
+
+.one {
+    display: flex;
+    padding: 0 0 0 50px;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+}
+
+.one article:first-child {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.one article:last-child {
+    flex: 0 0 45%;
+}
+
+.one img {
+    width: 100%;
+}
+
+.one h5 {
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--red);
+}
+
+.one article:first-child hr {
+    height: 2px;
+    background: var(--red);
+    width: 20%;
+    border: none;
+    margin: 5px 0 20px 0;
+}
+
+.one article h4 {
+    font-size: 1.1rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 20px;
+}
+
+.one article p {
+    font-size: .8rem;
+}
+
+
+/*************
 section two
 ************/
-                
-                .two {
-                    background: var(--lightGray);
-                }
-                
-                .two hgroup h5 {
-                    text-align: center;
-                    font-family: 'Source Sans Pro';
-                    text-transform: uppercase;
-                    font-size: .9rem;
-                    font-weight: 700;
-                    color: var(--red);
-                    padding-top: 50px;
-                }
-                
-                .two hgroup hr {
-                    height: 2px;
-                    background: var(--red);
-                    width: 8%;
-                    border: none;
-                    margin: 20px auto 20px auto;
-                }
-                
-                .two hgroup h4 {
-                    text-align: center;
-                    font-size: 1.4rem;
-                    font-family: 'Kaushan Script', cursive;
-                    margin-bottom: 30px;
-                }
-                
-                .two hgroup p {
-                    display: block;
-                    width: 60%;
-                    margin: auto;
-                    text-align: center;
-                    font-size: .8rem;
-                }
-                
-                .two div {
-                    display: flex;
-                    justify-content: space-around;
-                    margin-top: 30px;
-                    margin-bottom: 50px;
-                }
-                
-                .two div article {
-                    flex: 0 0 30%;
-                }
-                
-                .two div article p {
-                    font-size: .8rem;
-                    margin-bottom: 10px;
-                }
-                
-                .two div article h4 i {
-                    color: var(--red);
-                }
-                
-                .two div article a {
-                    color: var(--red);
-                    text-decoration: underline;
-                }
-                /***************
-                three
-                ***************/
-                
-                .three {
-                    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/three.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    height: 50vh;
-                    padding: 40px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-end;
-                }
-                
-                .three h5 {
-                    text-align: center;
-                    font-family: 'Source Sans Pro';
-                    text-transform: uppercase;
-                    font-size: .9rem;
-                    font-weight: 700;
-                    color: var(--red);
-                    padding-top: 50px;
-                }
-                
-                .three h3 {
-                    color: var(--white);
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    margin-bottom: 10px;
-                }
-                
-                .three p {
-                    color: var(--white);
-                    font-size: .8rem;
-                    text-align: right;
-                }
-                
-                .three button {
-                    font-size: 1.2rem;
-                }
+
+.two {
+    background: var(--lightGray);
+}
+
+.two hgroup h5 {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--red);
+    padding-top: 50px;
+}
+
+.two hgroup hr {
+    height: 2px;
+    background: var(--red);
+    width: 8%;
+    border: none;
+    margin: 20px auto 20px auto;
+}
+
+.two hgroup h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 30px;
+}
+
+.two hgroup p {
+    display: block;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.two div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.two div article {
+    flex: 0 0 30%;
+}
+
+.two div article p {
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.two div article h4 i {
+    color: var(--red);
+}
+
+.two div article a {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+
+/***************
+three
+***************/
+
+.three {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/three.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.three h5 {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--red);
+    padding-top: 50px;
+}
+
+.three h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.three p {
+    color: var(--white);
+    font-size: .8rem;
+    text-align: right;
+}
+
+.three button {
+    font-size: 1.2rem;
+}
+
+
+/*************
+section four
+*************/
+
+.four h5 {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--red);
+    padding-top: 30px;
+}
+
+.four h2 {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.galleryBg {
+    background: var(--lightGray);
+    margin: 0 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery article {
+    height: 40vh;
+    flex: 0 0 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery .socials {
+    display: flex;
+    padding: 20px 0;
+}
+
+.gallery .socials i {
+    flex: 0 0 25%;
+    justify-content: flex-start;
+    color: var(--red);
+    font-size: 1.2rem;
+}
+
+.gallery h3 {
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+.gallery h4 {
+    font-size: 1rem;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    font-size: .8rem;
+}
+
+.gallery .img_1 {
+    background-image: url(img/people1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .img_2 {
+    background-image: url(img/people2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .img_3 {
+    background-image: url(img/people3.jpg);
+    background-position: center;
+    background-size: cover;
+}
