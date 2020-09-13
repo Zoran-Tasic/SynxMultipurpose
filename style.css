@@ -415,6 +415,7 @@ section five
     font-size: 1rem;
     text-align: center;
     padding: 20px;
+    margin-top: -30px;
 }
 
 .projects {
@@ -465,4 +466,45 @@ section five
     background-image: url(img/project5.jpg);
     background-size: cover;
     background-position: center;
+}
+
+
+/***************
+sectio six
+***************/
+
+.six {
+    display: flex;
+    justify-content: space-around;
+}
+
+.six article {
+    flex: 0 0 23%;
+}
+
+.six h2 {
+    color: var(--red);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.six h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.six p {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.sixFooter {
+    background-image: url(img/section8.jpg);
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
 }
