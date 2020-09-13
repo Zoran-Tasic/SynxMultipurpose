@@ -9,6 +9,7 @@ https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
                  :root {
                     --red: #ef233c;
                     --darkGray: #414141;
+                    --lightGray: #f7f7f7;
                     --white: #fff;
                     --transition: .4s ease
                 }
@@ -189,7 +190,7 @@ section two
 ************/
                 
                 .two {
-                    background: lightgray;
+                    background: var(--lightGray);
                 }
                 
                 .two hgroup h5 {
@@ -229,6 +230,7 @@ section two
                     display: flex;
                     justify-content: space-around;
                     margin-top: 30px;
+                    margin-bottom: 50px;
                 }
                 
                 .two div article {
@@ -247,4 +249,46 @@ section two
                 .two div article a {
                     color: var(--red);
                     text-decoration: underline;
+                }
+                /***************
+                three
+                ***************/
+                
+                .three {
+                    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/three.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 50vh;
+                    padding: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+                
+                .three h5 {
+                    text-align: center;
+                    font-family: 'Source Sans Pro';
+                    text-transform: uppercase;
+                    font-size: .9rem;
+                    font-weight: 700;
+                    color: var(--red);
+                    padding-top: 50px;
+                }
+                
+                .three h3 {
+                    color: var(--white);
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                
+                .three p {
+                    color: var(--white);
+                    font-size: .8rem;
+                    text-align: right;
+                }
+                
+                .three button {
+                    font-size: 1.2rem;
                 }
