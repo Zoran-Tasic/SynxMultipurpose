@@ -191,6 +191,7 @@ section two
 
 .two {
     background: var(--lightGray);
+    padding: 50px;
 }
 
 .two hgroup h5 {
@@ -200,7 +201,6 @@ section two
     font-size: .9rem;
     font-weight: 700;
     color: var(--red);
-    padding-top: 50px;
 }
 
 .two hgroup hr {
@@ -230,7 +230,6 @@ section two
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
-    margin-bottom: 50px;
 }
 
 .two div article {
@@ -342,11 +341,16 @@ section four
     padding: 20px 0;
 }
 
-.gallery .socials i {
+.gallery .socials a {
     flex: 0 0 25%;
     justify-content: flex-start;
     color: var(--red);
     font-size: 1.2rem;
+}
+
+.gallery .socials a:hover {
+    color: var(--darkGray);
+    transition: var(--transition);
 }
 
 .gallery h3 {
@@ -503,8 +507,81 @@ sectio six
 }
 
 .sixFooter {
-    background-image: url(img/section8.jpg);
-    height: 10vh;
+    background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(img/section8.jpg);
+    height: 15vh;
     background-position: center;
     background-size: cover;
+}
+
+
+/************
+section seven
+*************/
+
+.seven h5 {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--black);
+    padding-top: 30px;
+}
+
+.seven h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.seven p {
+    color: var(--black);
+    font-size: .8rem;
+    text-align: center;
+}
+
+.sevenItem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0 40px 0;
+}
+
+.sevenItem article {
+    flex: 0 0 28%;
+    padding: 30px;
+}
+
+.sevenItem article:nth-child(2) {
+    box-shadow: 0 0 8px var(--darkGray);
+}
+
+.sevenItem article h4 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.sevenItem article h5 {
+    text-transform: lowercase;
+    color: var(--red);
+    font-size: 1rem;
+    text-align: left;
+    padding: 5px 0 30px 0;
+}
+
+.sevenItem article h5 span {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.sevenItem article ul li {
+    font-size: .8rem;
+    color: var(--black);
+}
+
+.sevenItem article ul li i {
+    color: var(--red);
 }
